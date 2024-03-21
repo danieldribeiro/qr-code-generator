@@ -1,0 +1,340 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .container{
+    width: 70vw;
+    height: 80vh;
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 2px #ffffff62;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      height: auto;
+      width: 85vw;
+      margin: 20px 0;
+    }
+
+    .download-option-wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+
+      select{
+        width: 30%;
+        border: 1px solid #00000037;
+        border-radius: 4px;
+        padding: 2px 10px;
+      }
+    }
+
+
+    .download-wrapper{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 1.6rem;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin-top: 10px;
+      border-radius: 24px;
+      border: 1px solid #000;
+      background-color: var(--background-color);
+      color: #fff;
+
+      @media screen and (max-width: 450px){
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+    }
+
+    .download-icon{
+      width: 15px;
+      color: #fff;
+    }
+
+    label{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 1.4rem;
+      font-weight: bold;
+
+        input{
+          width: 100%;
+          height: 35px;
+          outline: none;
+          padding: 0 10px;
+          font-size: 1.4rem;
+
+          @media screen and (max-width: 450px){
+            font-size: 1.6rem;
+            height: 40px;
+          }
+
+          &:focus{
+            border: 1px solid blue;
+            border-radius: 2.5px;
+          }
+        }
+    }
+
+    .left-container{
+      padding: 10px;
+    }
+
+    .qr-code-container{
+      width: 25rem;
+      height: 35rem;
+      margin: 15px auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .customizations-container{
+      width: 50%;
+      height: 80%;
+
+      @media screen and (max-width: 450px){
+        width: 80%;
+        height: auto;
+        padding: 20px 0;
+      }
+
+      label{
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 450px){
+          font-size: 2rem;
+        }
+      }
+
+      .unshow{
+        display: none;
+      }
+
+      .accordion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.221);
+        border-radius: 4px;
+        transition: .2s;
+
+        header{
+          width: 100%;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          img{
+            width: 15px;
+            height: 15px;
+          }
+
+          .title{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+
+        h3{
+          font-size: 1.6rem;
+        }
+
+        img{
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      .accordion-show{
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        cursor: pointer;
+        border: 1px solid rgba(0, 0, 0, 0.221);
+        border-radius: 4px;
+        transition: .2s;
+
+        header{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+
+          img{
+            width: 15px;
+            height: 15px;
+          }
+
+          .title{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+
+        h3{
+          font-size: 1.6rem;
+        }
+
+        img{
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      p{
+        font-size: 1.6rem;
+      }
+
+      .colors-wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 15px 0;
+
+        p{
+          width: 100%;
+          padding: 0 10px;
+          align-self: flex-start;
+        }
+
+        .color-pickers{
+          width: 100% !important;
+          gap: 0 10px;
+        }
+
+        .color{
+          width: 30px;
+          height: 30px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        .black{
+          background-color: #000000;
+        }
+
+        .gray{
+          background-color: #808080;
+        }
+
+        .red{
+          background-color: #ff0000;
+        }
+
+        .blue{
+          background-color: #0000FF;
+        }
+        
+        .green{
+          background-color: #008000;
+        }
+
+        .orange{
+          background-color: #FFA500;
+        }
+
+        .yellow{
+          background-color: #ffff00;
+        }
+
+        .purple{
+          background-color: #800080;
+        }
+
+        .pink{
+          background-color: #fd7b91;
+        }
+
+        .cyan{
+          background-color: #00FFFF;
+        }
+
+        .lime{
+          background-color: #90EE90;
+        }
+      }
+
+      .styles-container{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+      }
+
+      .style-wrapper{
+        width: 100%;
+        cursor: pointer;
+
+        img{
+          width: 100%;
+          height: 30px;
+        }
+      }
+
+      .frames-container{
+        width: 100%;
+        margin: 15px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .frame-wrapper{
+          width: 20%;
+          display: flex;
+          box-shadow: 0 0 10px #0000002d;
+          cursor: pointer;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .frame-wrapper:first-child img{
+          width: 100%;
+        }
+      }
+
+      .input-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        input{
+          width: 60%;
+          height: 30px;
+          padding: 10px;
+          margin-bottom: 10px;
+
+          @media screen and (max-width: 450px){
+            width: 90%;
+          }
+        }
+      }
+
+      .icon-wrapper img{
+        width: 50px;
+        height: 40px;
+      }
+    }
+  }
+}
